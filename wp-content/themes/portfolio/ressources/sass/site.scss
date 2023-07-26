@@ -1,1 +1,23 @@
 /* Home page */
+
+/* Basics */
+/*@import 'other/fonts';*/
+@import 'other/reset';
+@import 'other/utils';
+@import 'other/variables';
+@import 'other/style';
+
+/* Navigation section */
+@import 'pages/parts/navigation';
+
+/* Header section */
+@import 'home/header';
+
+/* Main section */
+
+
+/* Footer section */
+@import 'pages/parts/footer';
+
+/* Animations */
+@import 'other/keyframes';

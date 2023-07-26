@@ -1,0 +1,33 @@
+/* Ajout au reset */
+
+.browserupgrade, .no-js__message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  background: tomato;
+  padding: 2rem;
+  margin: 0 0 1rem;
+  z-index: 999;
+  font-weight: 700;
+
+}
+
+.js-enabled .no-js__message {
+  display:none;
+}
+
+.sr-only, .hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
