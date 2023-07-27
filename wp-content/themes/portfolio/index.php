@@ -11,6 +11,7 @@
         <?php get_template_part('home/project'); ?>
         <?php get_template_part('home/projects'); ?>
         <?php get_template_part('home/contact'); ?>
+        <?php get_template_part('home/socials'); ?>
     </main>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

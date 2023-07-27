@@ -1,7 +1,8 @@
 <section class="contact" aria-label="Section du formulaire de contact">
+    <h3 role="heading" aria-level="3" class="hidden">Formulaire de contact</h3>
     <div class="contact__container">
-        <h3 role="heading" aria-level="3"><?= get_field('contact-title'); ?></h3>
-        <p><?= get_field('contact-text'); ?></p>
+        <p class="contact__title"><?= get_field('contact-title'); ?></p>
+        <p class="contact__text"><?= get_field('contact-text'); ?></p>
         <img src="<?= get_field('contact-img'); ?>" alt="selfie de Renaud">
 
         <?php

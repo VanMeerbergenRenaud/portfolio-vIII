@@ -17,7 +17,7 @@
             <?php endwhile;
         endif; ?>
     </ul>
-    <a href="https://github.com/VanMeerbergenRenaud" title="Vers mon profil Github" itemprop="url">
+    <a href="https://github.com/VanMeerbergenRenaud" title="Vers mon profil Github" target="_blank" itemprop="url">
         <img src="<?= get_field('github', 'option'); ?>" alt="icône du site Github" itemprop="image">
     </a>
 </nav>
