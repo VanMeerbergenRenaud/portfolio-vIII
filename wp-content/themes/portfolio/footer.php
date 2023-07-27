@@ -2,6 +2,20 @@
             <p>
                 © 2023 <a href="https://renaud-vmb.com" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Tous droits réservés.
             </p>
+            <ul>
+                <?php if (have_rows('footer-links', 'option')) :
+                    while (have_rows('footer-links', 'option')) : the_row();
+                        $link = get_sub_field('link');
+                        $text = get_sub_field('text');
+                        ?>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="<?= $link; ?>" tabindex="0" title="Vers la page <?= $text; ?>" itemprop="url">
+                                <span itemprop="name"><?= $text; ?></span>
+                            </a>
+                        </li>
+                    <?php endwhile;
+                endif; ?>
+            </ul>
         </footer>
         <?php
             if (is_front_page()) {
