@@ -66,23 +66,23 @@ function hepl_execute_contact_form(): void
             'nom' => 'text_field',
             'prénom' => 'text_field',
             'email' => 'text_field',
-            'téléphone' => 'text_field',
+            'businessName' => 'text_field',
             'message' => 'textarea_field',
         ])
         ->validate([
             'nom' => ['required'],
             'prénom' => ['required'],
             'email' => ['required', 'email'],
-            'téléphone' => ['required'],
+            'businessName' => ['required'],
             'message' => ['required'],
         ])
         ->save(
             title: fn($data) => $data['nom'] . ' ' . $data['prénom'] . ' <' . $data['email'] . '>',
-            content: fn($data) => 'Prénom: ' . $data['nom'] . PHP_EOL . 'Nom: ' . $data['prénom'] . PHP_EOL . 'Email: ' . $data['email'] . PHP_EOL . 'Numéro de téléphone: ' . $data['téléphone'] . PHP_EOL . 'Message:' . PHP_EOL . $data['message'],
+            content: fn($data) => 'Prénom: ' . $data['nom'] . PHP_EOL . 'Nom: ' . $data['prénom'] . PHP_EOL . 'Email: ' . $data['email'] . PHP_EOL . 'Nom entreprise: ' . $data['businessName'] . PHP_EOL . 'Message:' . PHP_EOL . $data['message'],
         )
         ->send(
             title: fn($data) => 'Nouveau message de ' . $data['nom'] . ' ' . $data['prénom'],
-            content: fn($data) => 'Prénom: ' . $data['nom'] . PHP_EOL . 'Nom: ' . $data['prénom'] . PHP_EOL . 'Email: ' . $data['email'] . PHP_EOL . 'Numéro de téléphone: ' . $data['téléphone'] . PHP_EOL . 'Message:' . PHP_EOL . $data['message'],
+            content: fn($data) => 'Prénom: ' . $data['nom'] . PHP_EOL . 'Nom: ' . $data['prénom'] . PHP_EOL . 'Email: ' . $data['email'] . PHP_EOL . 'Nom entreprise: ' . $data['businessName'] . PHP_EOL . 'Message:' . PHP_EOL . $data['message'],
         )
         ->feedback();
 }
