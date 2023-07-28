@@ -1,7 +1,7 @@
 /* Home page */
 
 /* Basics */
-/*@import 'other/fonts';*/
+@import 'other/fonts';
 @import 'other/reset';
 @import 'other/utils';
 @import 'other/variables';
@@ -11,7 +11,8 @@
 @import 'pages/parts/navigation';
 
 /* Header section */
-@import 'home/header';
+@import 'home/hero';
+
 
 /* Main section */
 

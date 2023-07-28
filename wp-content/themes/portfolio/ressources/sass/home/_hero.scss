@@ -1,0 +1,146 @@
+/* Home page */
+
+.hero {
+  .card-content {
+    padding: 2.25em 2.25em 0;
+
+    h2 {
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      color: white;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    img {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.about {
+  .card-content {
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    ul {
+      li {
+        margin-top: 2rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+
+        p {
+          margin-top: 1rem;
+          text-transform: initial;
+        }
+      }
+    }
+
+    span {
+      display: block;
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: #eee;
+    }
+  }
+}
+
+.approach {
+  .card-content {
+    display: grid;
+    text-align: center;
+
+    h3 {
+      line-height: 1;
+      margin: 2.25rem 0 1.5rem;
+    }
+
+    img {
+      margin: 0 auto;
+      order: -1;
+      width: 80px;
+      height: 80px;
+      scale: 2.25;
+    }
+  }
+}
+
+.studies {
+  .card-content {
+
+    h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      li {
+        display: grid;
+        font-size: 1.125rem;
+
+        .period {
+          order: 1;
+          text-align: right;
+
+          time {
+            padding-right: 0.25rem;
+            font-size: 0.75rem;
+            color: white;
+          }
+        }
+      }
+
+      li + li {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.tools {
+  .card-content {
+    display: grid;
+    text-align: center;
+    padding: 2.5rem;
+
+    h3 {
+      order: 0;
+      margin: 2rem auto;
+      line-height: 1;
+    }
+
+    .top, .bottom {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0 2rem;
+
+      li {
+
+        img {
+          object-fit: contain;
+          max-height: 1.5rem;
+        }
+      }
+    }
+
+    .top {
+      order: -1;
+
+      li:nth-of-type(2), li:nth-of-type(4) {
+        margin-top: 1.5rem;
+      }
+    }
+
+    .bottom {
+      order: 1;
+
+      li:nth-of-type(1), li:nth-of-type(3), li:nth-of-type(5) {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
-    <main>
+    <main id="cards">
         <?php get_template_part('home/hero'); ?>
         <?php get_template_part('home/about'); ?>
         <?php get_template_part('home/approach'); ?>

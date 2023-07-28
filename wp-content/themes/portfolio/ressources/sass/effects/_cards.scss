@@ -1,0 +1,55 @@
+/* Card effect */
+
+section {
+  padding: 1px;
+  background-color: #0a0118;
+}
+
+#cards:hover > .card::after {
+  opacity: 1;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(169, 163, 194, .25) 0%, rgba(169, 163, 194, .25) 100%);
+  border-radius: 1rem;
+  inset: 1px;
+  z-index: 2;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: opacity .5s;
+  width: 100%;
+}
+
+.card::before {
+  background: radial-gradient(var(--circle-size, 600px) circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, .06), transparent 40%);
+  z-index: 3;
+}
+
+.card::after {
+  background: radial-gradient(var(--circle-size, 600px) circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, .4), transparent 40%);
+  z-index: 1;
+}
+
+.card > .card-content {
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+  background-color: #0a0118;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 2;
+}
