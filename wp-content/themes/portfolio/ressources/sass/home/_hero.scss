@@ -144,3 +144,133 @@
     }
   }
 }
+
+.code {
+  .card-content {
+    padding: 2rem 0 0 1.5rem;
+
+    .code__container {
+      margin-top: 1.25rem;
+      padding: 1rem 1.5rem 1rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 1.5rem 0 0 0;
+      background-image: linear-gradient(180deg, rgba(53, 73, 252, 0), rgba(53, 73, 252, 0.05));
+    }
+  }
+}
+
+.responsive {
+  .card-content {
+    padding-bottom: 0;
+
+    .responsive__container {
+      img {
+        min-height: 200px;
+      }
+    }
+  }
+}
+
+.stats {
+  .card-content {
+    padding: 2rem;
+    text-align: center;
+
+    ul {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+
+      li {
+        font-size: 1.125rem;
+
+        span {
+          position: relative;
+          top: -0.175rem;
+          left: 0.175rem;
+        }
+      }
+    }
+  }
+}
+
+.project {
+  .card-content {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+
+    p {
+      margin: 1rem auto 1.5rem;
+    }
+
+    .project__mockup {
+      position: relative;
+      border-radius: 2rem;
+
+      img {
+        position: relative;
+      }
+
+      &__img {
+        margin: 1rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 2rem;
+        overflow: scroll;
+        scrollbar-width: none;
+      }
+    }
+  }
+}
+
+.projects {
+  .card-content {
+    padding: 2rem 0 0;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      li {
+        a {
+          display: block;
+          padding: 1.5rem 2rem 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+          .projects__title {
+            display: block;
+            font-size: 1rem;
+          }
+
+          .projects__text {
+            display: block;
+            margin: 0.75rem 0 1rem;
+            font-size: 0.875rem;
+            color: #9A96AE;
+          }
+
+          .projects__img {
+            position: relative;
+            bottom: -2px;
+            border-radius: 0.5rem 0.5rem 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  .card-content {
+
+  }
+}

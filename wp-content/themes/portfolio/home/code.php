@@ -2,7 +2,7 @@
     <div class="card-content">
         <h3 role="heading" aria-level="3"><?= get_field('code-title'); ?></h3>
         <p><?= get_field('code-text'); ?></p>
-        <div>
+        <div class="code__container">
             <img src="<?= get_field('code-img'); ?>" alt="liste des 6 éléments fondamentaux pour un code de qualité (bonne sémantique, accessibilité clavier, VoiceOver, meta-description, meta-attribute et microdata)">
         </div>
     </div>
@@ -11,7 +11,7 @@
     <div class="card-content">
         <h3 role="heading" aria-level="3"><?= get_field('responsive-title'); ?></h3>
         <p><?= get_field('responsive-text'); ?></p>
-        <div>
+        <div class="responsive__container">
             <img src="<?= get_field('responsive-img'); ?>" alt="exemple d'un site internet responsive sur 4 appareils différentes">
         </div>
     </div>

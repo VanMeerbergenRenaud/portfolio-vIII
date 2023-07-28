@@ -10,7 +10,7 @@
                     $link = get_sub_field('link');
                     ?>
                     <li>
-                        <a href="<?= $link; ?>" title="Vers le projet" class="projects__link" target="_blank">
+                        <a href="<?= $link; ?>" title="Vers le projet" target="_blank">
                             <span class="projects__title"><?= $title; ?></span>
                             <span class="projects__text"><?= $text; ?></span>
                             <img class="projects__img" src="<?= $img; ?>" alt="section d'accueil du projet">
