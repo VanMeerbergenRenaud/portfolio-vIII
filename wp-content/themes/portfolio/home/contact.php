@@ -1,9 +1,9 @@
 <section class="card contact" aria-label="Section du formulaire de contact">
     <h3 role="heading" aria-level="3" class="hidden">Formulaire de contact</h3>
     <div class="card-content">
+        <img src="<?= get_field('contact-img'); ?>" class="contact__img" alt="selfie de Renaud">
         <p class="contact__title"><?= get_field('contact-title'); ?></p>
         <p class="contact__text"><?= get_field('contact-text'); ?></p>
-        <img src="<?= get_field('contact-img'); ?>" alt="selfie de Renaud">
 
         <?php
         $feedback = hepl_session_get('hepl_contact_form_feedback') ?? false;
@@ -63,7 +63,15 @@
                     <input type="hidden" name="action" value="hepl_contact_form" />
                     <input type="hidden" name="contact_nonce" value="<?= wp_create_nonce('hepl_contact_form'); ?>" />
                     <button type="submit">
-                        Envoyer
+                        <span>
+                            <span class="svg-wrapper">
+                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                                </svg>
+                            </span>
+                        </span>
+                        <span>Envoyer</span>
                     </button>
                 </div>
             </form>

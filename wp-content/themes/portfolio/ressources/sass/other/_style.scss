@@ -64,6 +64,23 @@ a {
   background-color: #0A0118;
 }
 
+.basic {
+  margin-top: 2rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 3rem;
+  color: white;
+  background-color: #080117;
+  border-radius: 2rem;
+  border: 1px solid #352E46;
+}
+
+.basic:hover {
+  color: whitesmoke;
+  background-color: #211a34;
+}
+
 abbr {
   text-decoration: none;
   border-bottom: 1px dotted #222;
