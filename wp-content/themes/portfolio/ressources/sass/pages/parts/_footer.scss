@@ -1,0 +1,23 @@
+/* Footer */
+
+footer {
+  margin: 2rem auto 4.5rem;
+  padding: 1.5rem 1.5rem 2rem;
+  color: white;
+
+  li, p, a, span {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

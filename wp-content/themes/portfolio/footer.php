@@ -1,7 +1,4 @@
         <footer>
-            <p>
-                © 2023 <a href="https://renaud-vmb.com" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Tous droits réservés.
-            </p>
             <ul>
                 <?php if (have_rows('footer-links', 'option')) :
                     while (have_rows('footer-links', 'option')) : the_row();
@@ -16,6 +13,9 @@
                     <?php endwhile;
                 endif; ?>
             </ul>
+            <p>
+                © 2023 <a href="https://renaud-vmb.com" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Tous droits réservés.
+            </p>
         </footer>
         <?php
             if (is_front_page()) {
