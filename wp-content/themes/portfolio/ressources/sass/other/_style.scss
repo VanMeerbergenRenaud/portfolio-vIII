@@ -20,6 +20,14 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+main {
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-flow: row;
+  gap: 1.5rem 0;
+}
+
 h2 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -94,18 +102,10 @@ abbr {
   display: block;
 }
 
-main {
-  padding: 1.5rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-flow: row;
-  gap: 1.5rem 0;
-}
-
 /* ----------------------
       Media queries
 ------------------------ */
-@media (min-width: 1000px) {
+@media (min-width: 1250px) {
   .none {
     display: block;
   }
@@ -114,4 +114,66 @@ main {
     display: none;
   }
 
+  body {
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 2000px;
+  }
+
+  main {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, auto);
+    gap: 1.5rem;
+    grid-template-areas:
+    "hero hero hero hero"
+    "about about approach approach"
+    "about about studies studies"
+    "tools tools studies studies"
+    "code code responsive responsive"
+    "stats stats contact contact"
+    "project projects contact contact"
+    "twitter github github github";
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.333;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+  }
+
+  .hero {grid-area: hero;}
+  .about {grid-area: about;}
+  .tools {grid-area: tools;}
+  .approach {grid-area: approach;}
+  .studies {grid-area: studies;}
+  .code {grid-area: code;}
+  .responsive {grid-area: responsive;}
+  .stats {grid-area: stats;}
+  .contact {grid-area: contact;}
+  .project {grid-area: project;}
+  .projects {grid-area: projects;}
+  .twitter {grid-area: twitter;}
+  .github {grid-area: github;}
 }

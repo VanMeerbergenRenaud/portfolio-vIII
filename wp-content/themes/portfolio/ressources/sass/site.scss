@@ -10,12 +10,9 @@
 /* Navigation section */
 @import 'pages/parts/navigation';
 
-/* Header section */
-@import 'home/mobile';
-
-
 /* Main section */
-
+@import 'home/mobile';
+@import 'home/desktop';
 
 /* Footer section */
 @import 'pages/parts/footer';

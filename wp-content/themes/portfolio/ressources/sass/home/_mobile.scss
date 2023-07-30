@@ -23,7 +23,6 @@
 
 .about {
   .card-content {
-
     h3 {
       margin-bottom: 0;
     }
@@ -119,7 +118,6 @@
       gap: 0 2rem;
 
       li {
-
         img {
           object-fit: contain;
           max-height: 1.5rem;
@@ -166,6 +164,7 @@
 
     .responsive__container {
       img {
+        margin-top: 1rem;
         min-height: 200px;
       }
     }
@@ -322,7 +321,21 @@
     }
 
     .success {
+      margin: 1.5rem auto 2rem;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+      border: 1px solid #009f0e;
+      background-color: #0A0118;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 1rem;
 
+      p {
+        text-align: center;
+        font-weight: 500;
+        color: #009f0e;
+      }
     }
 
     .contact__info {

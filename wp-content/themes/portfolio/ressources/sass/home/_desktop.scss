@@ -1,2 +1,388 @@
 /* Home page desktop */
 
+@media screen and (min-width: 1250px) {
+  section {
+    height: fit-content;
+  }
+
+  .hero {
+    margin-top: 0.5rem;
+
+    .card-content {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      padding: 0 11.25rem;
+      gap: 0 14rem;
+
+      h2 {
+        font-size: 2rem;
+        margin: 11.25rem 0 1.5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 6.25rem;
+      }
+
+      img {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        width: 275px;
+        align-self: end;
+      }
+    }
+  }
+
+  .about {
+    .card-content {
+      padding: 3rem;
+
+      h3 {
+        margin-bottom: 0;
+      }
+
+      ul {
+        li {
+          font-size: 0.875rem;
+
+          p {
+            margin-top: 1.25rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      span {
+        margin-top: 3rem;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .approach {
+    .card-content {
+      display: grid;
+      grid-template-columns: 1fr 80px;
+      align-items: center;
+      gap: 0 3rem;
+      padding: 3rem;
+      text-align: left;
+
+      h3 {
+        margin: 0 0 1rem;
+      }
+
+      img {
+        order: 1;
+        grid-row: 1/3;
+        grid-column: 2/3;
+      }
+    }
+  }
+
+  .studies {
+    .card-content {
+      padding: 3rem;
+
+      h3 {
+        margin-bottom: 2rem;
+      }
+
+      ul {
+        overflow: scroll;
+        max-height: 600px;
+
+        li {
+          display: grid;
+          grid-template-columns: 175px 1fr;
+          gap: 0 2rem;
+          font-size: 1.25rem;
+
+          .period {
+            order: -1;
+            text-align: left;
+            grid-row: 1/3;
+
+            time {
+              padding-right: 0;
+              font-size: 1rem;
+              font-weight: 400;
+              color: #9A96AE;
+            }
+          }
+
+          h4 {
+            margin-bottom: 1rem;
+          }
+        }
+
+        li + li {
+          margin-top: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .tools {
+    .card-content {
+      display: grid;
+      padding: 3rem 7.5rem 4rem;
+
+      h3 {
+        order: -1;
+        margin: 0 auto 3rem;
+      }
+
+      .top, .bottom {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0 3rem;
+
+        li {
+          img {
+            max-height: 2.25rem;
+          }
+        }
+      }
+
+      .top {
+        order: 0;
+        margin-bottom: 3rem;
+
+        li:nth-of-type(2), li:nth-of-type(4) {
+          margin-top: 0;
+        }
+      }
+
+      .bottom {
+        order: 1;
+
+        li:nth-of-type(1), li:nth-of-type(3), li:nth-of-type(5) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .code {
+    .card-content {
+      padding: 3rem 0 0 3rem;
+
+      p {
+        margin-top: 1rem;
+      }
+
+      .code__container {
+        margin-top: 3rem;
+        padding: 2rem 3rem 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 1.5rem 0 0 0;
+        background-image: linear-gradient(180deg, rgba(53, 73, 252, 0), rgba(53, 73, 252, 0.05));
+      }
+    }
+  }
+
+  .responsive {
+    .card-content {
+      padding: 3rem 3rem 0;
+
+      p {
+        margin-top: 1rem;
+      }
+
+      .responsive__container {
+        img {
+          margin-top: 1rem;
+          max-height: 350px;
+        }
+      }
+    }
+  }
+
+  .stats {
+    .card-content {
+      padding: 2.25rem 3rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0 3rem;
+
+      h3 {
+        display: inline-block;
+      }
+
+      ul {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 0 3rem;
+
+        li {
+          display: flex;
+          gap: 0 0.5rem;
+          font-size: 1.25rem;
+
+          p {
+            margin-top: -0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .project {
+    .card-content {
+      padding: 3rem 2rem 2rem;
+    }
+  }
+
+  .projects {
+    .card-content {
+      h3 {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .contact {
+    .card-content {
+      padding: 2.5rem 3rem 1.5rem;
+      display: grid;
+      grid-template-columns: 3.5rem 1fr;
+      gap: 0 1.5rem;
+    }
+
+    &__title {
+      margin: 0 0 0.75rem 1.5rem;
+      text-align: left;
+      font-size: 1rem;
+      grid-column: 2/3;
+    }
+
+    &__text {
+      padding: 0.75rem 1.25rem;
+      border-radius: 1.5rem 2rem 2rem 0.5rem;
+      grid-column: 2/3;
+    }
+
+    &__img {
+      margin: 3rem 0 0;
+      width: 3.5rem;
+      height: 3.5rem;
+      grid-row: 1/3;
+      grid-column: 1/2;
+    }
+
+    &__form {
+      grid-column: 1/3;
+      margin-top: 2rem;
+
+      .error {
+        margin: 1rem auto 2rem;
+        padding: 1rem;
+        gap: 0 1.5rem;
+      }
+
+      .success {
+        margin: 1rem auto 2rem;
+      }
+
+      .contact__info {
+        &__field {
+          label {
+            position: relative;
+            top: 0;
+            left: 2rem;
+
+            span {
+              margin-left: 0.25rem;
+            }
+          }
+
+          input, textarea {
+            margin: 0.65rem 0 1.5rem;
+            padding: 1rem 2rem;
+          }
+
+          textarea {
+            min-height: 200px;
+          }
+        }
+      }
+
+      .contact__footer {
+        button {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .twitter {
+    .basic {
+      display: block;
+    }
+  }
+
+  .github {
+    .card-content {
+      padding: 2rem 0 0 3rem;
+      display: grid;
+      grid-template-columns: 333px 1fr;
+      gap: 0 1.5rem;
+    }
+
+    &__container {
+      .card-content {
+        position: relative;
+      }
+
+      .title {
+        font-size: 1.5rem;
+      }
+
+      .text {
+        max-width: 333px;
+      }
+
+      .link {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &__card {
+      position: relative;
+      right: -1px;
+      bottom: -1px;
+      padding: 3rem 2.75rem 2.5rem 2.75rem;
+      display: grid;
+      grid-template-columns: 1fr 90px;
+      gap: 0 2.15rem;
+      border: 1px solid #292139;
+      border-radius: 1.5rem 0 1.5em 0;
+
+      h4 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        max-width: 333px;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      p {
+        max-width: 333px;
+      }
+
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 0.75rem;
+        grid-row: 1/3;
+        grid-column: 2/3;
+      }
+    }
+  }
+}
+
