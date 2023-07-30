@@ -37,6 +37,7 @@
   .about {
     .card-content {
       padding: 3rem;
+      height: calc(100% - 6rem);
 
       h3 {
         margin-bottom: 0;
@@ -67,6 +68,7 @@
       align-items: center;
       gap: 0 3rem;
       padding: 3rem;
+      height: calc(100% - 6rem);
       text-align: left;
 
       h3 {
@@ -84,6 +86,7 @@
   .studies {
     .card-content {
       padding: 3rem;
+      height: calc(100% - 6rem);
 
       h3 {
         margin-bottom: 2rem;
@@ -92,7 +95,7 @@
       ul {
         overflow: scroll;
         scrollbar-width: none;
-        max-height: 525px;
+        max-height: 575px;
 
         li {
           display: grid;
@@ -129,6 +132,7 @@
     .card-content {
       display: grid;
       padding: 3rem 7.5rem 4rem;
+      height: calc(100% - 7rem);
 
       h3 {
         order: -1;
@@ -169,6 +173,7 @@
   .code {
     .card-content {
       padding: 3rem 0 0 3rem;
+      height: calc(100% - 3rem);
 
       p {
         margin-top: 1rem;
@@ -189,6 +194,7 @@
   .responsive {
     .card-content {
       padding: 3rem 3rem 0;
+      height: calc(100% - 3rem);
 
       p {
         margin-top: 1rem;
@@ -197,7 +203,7 @@
 
       .responsive__container {
         img {
-          margin-top: 3rem;
+          margin-top: 2rem;
           max-height: 350px;
         }
       }
@@ -207,6 +213,7 @@
   .stats {
     .card-content {
       padding: 2.25rem 3rem;
+      height: calc(100% - 4.5rem);
       display: inline-flex;
       align-items: center;
       gap: 0 3rem;
@@ -235,7 +242,8 @@
 
   .project {
     .card-content {
-      padding: 3rem 2rem 3rem;
+      padding: 3rem 2rem 2rem;
+      height: calc(100% - 5rem);
 
       p {
         margin-bottom: 2rem;
@@ -246,9 +254,10 @@
   .projects {
     .card-content {
       padding-top: 3rem;
+      height: calc(100% - 3rem);
 
       h3 {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
       }
     }
   }
@@ -256,6 +265,7 @@
   .contact {
     .card-content {
       padding: 2.5rem 3rem 1.5rem;
+      height: calc(100% - 4rem);
       display: grid;
       grid-template-columns: 3.5rem 1fr;
       gap: 0 1.5rem;
@@ -328,6 +338,9 @@
   }
 
   .twitter {
+    .card-content {
+      height: calc(100% - 3.5rem);
+    }
     .basic {
       display: block;
     }
@@ -336,6 +349,7 @@
   .github {
     .card-content {
       padding: 2rem 0 0 3rem;
+      height: calc(100% - 2rem);
       display: grid;
       grid-template-columns: 333px 1fr;
       gap: 0 1.5rem;

@@ -163,6 +163,9 @@ abbr {
     line-height: 2;
   }
 
+  .card {
+    height: auto;
+  }
   .hero {grid-area: hero;}
   .about {grid-area: about;}
   .tools {grid-area: tools;}

@@ -7,7 +7,7 @@
             <div class="project__mockup__img">
                 <a href="https://clinicoeurs.renaud-vmb.com" title="" target="_blank">
                     <!--<img src="<?php /*= get_field('project-img2'); */?>" alt="représentation de la page d'accueil du site web">-->
-                    <embed type="text/html" src="http://clinicoeurs-asbl.test/fr/accueil/" width="115%" height="100%" style="transform: translate(-6.5%, 0);">
+                    <embed type="text/html" src="https://clinicoeurs.renaud-vmb.com" width="115%" height="100%" style="transform: translate(-6.5%, 0);">
                 </a>
             </div>
         </div>
