@@ -128,6 +128,12 @@
       z-index: 10;
     }
 
+    &__link:hover {
+      .tooltip {
+        top: 2.75rem;
+      }
+    }
+
     ul {
       position: relative;
       top: 0;
@@ -137,7 +143,7 @@
       margin: 0;
       padding: 0;
       border: none;
-      transform: translate(0, 0);
+      transform: translate(-2.5rem, 0);
     }
   }
 }

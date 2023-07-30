@@ -27,7 +27,7 @@
         <div class="github__card none">
             <h4 role="heading" aria-level="4"><?= get_field('github-card-title'); ?></h4>
             <p><?= get_field('github-card-text'); ?></p>
-            <img src="<?= get_field('github-card-img'); ?>" alt="Renaud en beau costume en plein défilé de mode">
+            <img src="<?= get_field('github-card-img'); ?>" class="github__card__img" alt="Renaud en beau costume en plein défilé de mode">
             <ul role="list">
                 <?php if (have_rows('github-card-list')) :
                     while (have_rows('github-card-list')) : the_row();
@@ -37,7 +37,7 @@
                         ?>
                         <li>
                             <img src="<?= $icon; ?>" alt="icône de Github">
-                            <span><?= $number; ?></span>
+                            <span class="number"><?= $number; ?></span>
                             <span><?= $text; ?></span>
                         </li>
                     <?php endwhile;

@@ -1,16 +1,26 @@
 /* Ajout au reset */
 
-.browserupgrade, .no-js__message {
+p.browserupgrade, p.no-js__message {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   display: block;
-  background: tomato;
+  text-align: center;
+  color: black;
+  background: whitesmoke;
   padding: 2rem;
   margin: 0 0 1rem;
   z-index: 999;
-  font-weight: 700;
+  font-weight: 600;
+
+  a {
+    padding: 0.5rem 0.15rem 0.15rem;
+    color: #000eee;
+    border-bottom: 1px solid #000eee;
+    font-weight: 600;
+    background-color: transparent;
+  }
 
 }
 

@@ -53,7 +53,7 @@
 </p>
 <![endif]-->
 <p class="no-js__message">
-    Pour accéder à toutes les fonctionnalités de ce site, vous devez activer JavaScript.
+    Pour accéder à toutes les fonctionnalités de ce site, vous devez activer JavaScript.<br>
     Voici les <a href="https://www.enable-javascript.com/fr/" title="vers le site enable-javascript">
     instructions pour activer JavaScript dans votre navigateur Web</a>.
 </p>

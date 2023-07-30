@@ -91,7 +91,7 @@
 
       ul {
         overflow: scroll;
-        max-height: 600px;
+        max-height: 525px;
 
         li {
           display: grid;
@@ -171,6 +171,7 @@
 
       p {
         margin-top: 1rem;
+        max-width: 500px;
       }
 
       .code__container {
@@ -190,11 +191,12 @@
 
       p {
         margin-top: 1rem;
+        max-width: 500px;
       }
 
       .responsive__container {
         img {
-          margin-top: 1rem;
+          margin-top: 3rem;
           max-height: 350px;
         }
       }
@@ -232,14 +234,20 @@
 
   .project {
     .card-content {
-      padding: 3rem 2rem 2rem;
+      padding: 3rem 2rem 3rem;
+
+      p {
+        margin-bottom: 2rem;
+      }
     }
   }
 
   .projects {
     .card-content {
+      padding-top: 3rem;
+
       h3 {
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
       }
     }
   }
@@ -351,7 +359,7 @@
     }
 
     &__card {
-      position: relative;
+      position: absolute;
       right: -1px;
       bottom: -1px;
       padding: 3rem 2.75rem 2.5rem 2.75rem;
@@ -360,6 +368,7 @@
       gap: 0 2.15rem;
       border: 1px solid #292139;
       border-radius: 1.5rem 0 1.5em 0;
+      height: fit-content;
 
       h4 {
         font-size: 1.5rem;
@@ -375,12 +384,46 @@
         max-width: 333px;
       }
 
-      img {
+      &__img {
         width: 90px;
         height: 90px;
         border-radius: 0.75rem;
         grid-row: 1/3;
         grid-column: 2/3;
+      }
+
+      ul {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 0 2.5rem;
+        max-width: 375px;
+        height: fit-content;
+
+        li {
+          display: grid;
+          grid-template-columns: 0.65rem 1fr;
+          gap: 0.5rem 0.65rem;
+          align-items: start;
+          height: fit-content;
+
+          img {
+            grid-row: 1/3;
+            grid-column: 1/2;
+            object-fit: contain;
+            padding-top: 0.15rem;
+            width: 0.65rem;
+          }
+
+          span {
+            font-size: 0.65rem;
+            color: #9A96AE;
+          }
+
+          .number {
+            font-size: 0.75rem;
+          }
+        }
       }
     }
   }
