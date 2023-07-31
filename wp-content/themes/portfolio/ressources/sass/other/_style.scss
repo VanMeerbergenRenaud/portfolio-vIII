@@ -120,23 +120,6 @@ abbr {
     max-width: 2000px;
   }
 
-  main {
-    padding: 1rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, auto);
-    gap: 1.5rem;
-    grid-template-areas:
-    "hero hero hero hero"
-    "about about approach approach"
-    "about about studies studies"
-    "tools tools studies studies"
-    "code code responsive responsive"
-    "stats stats contact contact"
-    "project projects contact contact"
-    "twitter github github github";
-  }
-
   h2 {
     font-size: 2rem;
     font-weight: 400;
@@ -162,21 +145,4 @@ abbr {
     font-weight: 500;
     line-height: 2;
   }
-
-  .card {
-    height: auto;
-  }
-  .hero {grid-area: hero;}
-  .about {grid-area: about;}
-  .tools {grid-area: tools;}
-  .approach {grid-area: approach;}
-  .studies {grid-area: studies;}
-  .code {grid-area: code;}
-  .responsive {grid-area: responsive;}
-  .stats {grid-area: stats;}
-  .contact {grid-area: contact;}
-  .project {grid-area: project;}
-  .projects {grid-area: projects;}
-  .twitter {grid-area: twitter;}
-  .github {grid-area: github;}
 }
