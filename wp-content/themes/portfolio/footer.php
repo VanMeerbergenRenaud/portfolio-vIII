@@ -14,7 +14,7 @@
                 endif; ?>
             </ul>
             <p>
-                © 2023 <a href="https://renaud-vmb.com" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Tous droits réservés.
+                © 2023 <a href="<?= get_home_url(); ?>" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Tous droits réservés.
             </p>
         </footer>
         <?php
