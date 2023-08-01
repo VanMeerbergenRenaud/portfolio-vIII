@@ -1,4 +1,4 @@
-        <footer>
+        <footer role="contentinfo">
             <ul>
                 <?php if (have_rows('footer-links', 'option')) :
                     while (have_rows('footer-links', 'option')) : the_row();

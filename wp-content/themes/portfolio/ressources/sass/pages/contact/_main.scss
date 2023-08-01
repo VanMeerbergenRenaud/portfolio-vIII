@@ -2,19 +2,87 @@
 
 @import "./form";
 
-.contact {
-  padding: 1rem;
+main {
+  display: block;
 
-  h3 {
-    font-size: 1.25rem;
+  .contact {
+    padding: 1rem;
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    aside {
+      margin: 0 auto;
+      max-width: 500px;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      border: 1px solid #352E46;
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+      }
+
+      .infos {
+        p {
+          color: white;
+          font-size: 0.875rem;
+          font-weight: 500;
+
+          a {
+            margin-top: 0.5rem;
+            display: block;
+            color: #9A96AE;
+            font-size: 0.875rem;
+            line-height: 2;
+          }
+        }
+
+        p + p {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  .form {
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    h3, p {
+      margin: 0 auto;
+      text-align: center;
+      max-width: 250px;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+
+    &__container {
+      margin-top: 2.5rem;
+
+      .contact__form {
+        .contact__info {
+          display: contents;
+
+          textarea {
+            font-size: 0.875rem;
+            min-height: 225px;
+          }
+        }
+      }
+    }
   }
 }
 
-.form {
-  &__container {
-
-  }
-}
 
 @media screen and (min-width: 1250px) {
   .contact {
