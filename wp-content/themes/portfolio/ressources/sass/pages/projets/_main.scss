@@ -49,7 +49,7 @@
     }
   }
 
-  &__link, .cta .link {
+  &__link {
     display: block;
     position: absolute;
     top: 0;
@@ -80,6 +80,16 @@
   img {
     position: relative;
     bottom: -2px;
+  }
+
+  .link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
   }
 }
 

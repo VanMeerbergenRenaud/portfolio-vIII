@@ -40,9 +40,9 @@
                 <span><?= esc_html($subtitle); ?></span>
                 <h3 role="heading" aria-level="3"><?= esc_html($title); ?></h3>
                 <p><?= esc_html($text); ?></p>
-                <a href="<?= esc_url(get_home_url('/contact')); ?>" class="basic" title="Vers la page de contact">Prendre rendez-vous</a>
+                <a href="<?= esc_url(get_home_url() . '/contact'); ?>" class="basic" title="Vers la page de contact">Prendre rendez-vous</a>
                 <img src="<?= $img; ?>" alt="mockup de présentation sur un téléphone, 2 ordinateurs et un ipad le projet">
-                <a href="<?= esc_url(get_home_url('/contact')); ?>" class="link"></a>
+                <a href="<?= esc_url(get_home_url() . '/contact'); ?>" class="link"></a>
             <?php endif; ?>
         </section>
     </main>
