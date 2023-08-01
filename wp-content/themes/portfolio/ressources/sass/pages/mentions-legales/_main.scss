@@ -1,5 +1,9 @@
 /* Mentions légales : Mobile & Desktop */
 
+.navigation__menu {
+  display: none;
+}
+
 .mentions-legales {
   padding: 0 1rem;
 
@@ -40,10 +44,6 @@
   }
 }
 
-.navigation__menu {
-  display: none;
-}
-
 main + footer {
   margin: 1rem auto 0;
 }
@@ -51,5 +51,43 @@ main + footer {
 @media screen and (min-width: 1250px) {
   .navigation__menu {
     display: flex;
+  }
+
+  .mentions-legales {
+    padding: 10rem 16rem 0;
+
+    h2 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .date, time {
+      font-size: 0.875rem;
+    }
+
+    ul {
+      margin-top: 5rem;
+
+      li {
+        margin-bottom: 3rem;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+          max-width: 750px;
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    ul + ul {
+      margin-top: 0;
+    }
   }
 }

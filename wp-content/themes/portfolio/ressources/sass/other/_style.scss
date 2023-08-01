@@ -20,6 +20,10 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+header, main, footer {
+  margin: 0 auto;
+}
+
 main {
   padding: 1.5rem 1rem;
   display: grid;

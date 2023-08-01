@@ -10,13 +10,13 @@
                 $date = get_the_modified_date('Y-m-d H:i:s');
                 $date_format_french = get_the_modified_date('j F Y');
                 ?>
-                <time datetime="<?= esc_attr($date); ?>"><?= esc_html($date_format_french); ?></time>.
+                <time datetime="<?= esc_attr($date); ?>"><?= esc_html($date_format_french); ?></time>
             </p>
             <ul itemscope itemtype="http://schema.org/Person" role="list">
                 <li>
                     <h3 role="heading" aria-level="3">Introduction</h3>
                     <p itemprop="description">
-                        <span itemprop="name">Renaud Van Meerbergen</span> traitera avec le plus grand soin les données personnelles qui lui ont été communiquées. Renaud Van Meerbergen les traitera en toute confidentialité et ne les utilisera qu’aux fins pour lesquelles elles lui ont été communiquées. Ces données peuvent être enregistrées dans une ou plusieurs bases de données de Renaud Van Meerbergen et ne seront pas communiquées à des tiers sans le consentement de la personne concernée. Cette dernière peut en outre toujours réclamer la communication de ses données en notre possession, et en demander rectification et suppression.
+                        Renaud Van Meerbergen traitera avec le plus grand soin les données personnelles qui lui ont été communiquées. Renaud Van Meerbergen les traitera en toute confidentialité et ne les utilisera qu’aux fins pour lesquelles elles lui ont été communiquées. Ces données peuvent être enregistrées dans une ou plusieurs bases de données de Renaud Van Meerbergen et ne seront pas communiquées à des tiers sans le consentement de la personne concernée. Cette dernière peut en outre toujours réclamer la communication de ses données en notre possession, et en demander rectification et suppression.
                     </p>
                 </li>
                 <li>

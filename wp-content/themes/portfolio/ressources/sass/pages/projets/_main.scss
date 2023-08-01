@@ -1,0 +1,174 @@
+/* Projets  : Mobile & Desktop */
+
+.projects {
+  padding: 3rem 1rem;
+
+  .card-content {
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  article {
+    padding: 1px;
+    margin-bottom: 2rem;
+  }
+
+  &__infos {
+    display: grid;
+
+    div {
+      padding: 2rem 1.5rem 1.5rem;
+
+      h3 {
+        line-height: 1.35;
+        font-size: 1.25rem;
+      }
+
+      span {
+        display: block;
+        margin: 1.5rem 0 1.25rem;
+        font-size: 0.75rem;
+        line-height: 1.333;
+        text-transform: uppercase;
+      }
+
+      button {
+        font-size: 0.875rem;
+      }
+    }
+
+    img {
+      order: -1;
+      max-height: 235px;
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+
+  &__link, .cta .link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+  }
+}
+
+.cta {
+  position: relative;
+  margin: -4rem 1rem 0;
+  padding: 2rem 1.5rem 0;
+  border-radius: 1rem;
+  border: 1px solid #352E46;
+
+  span {
+    color: #9A96AE;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin: 1.25rem 0 1.5rem;
+  }
+
+  img {
+    position: relative;
+    bottom: -2px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .projects {
+    padding: 11rem 2rem 4rem;
+
+    h2 {
+      font-size: 3.25rem;
+      margin-bottom: 7.5rem;
+    }
+
+    article {
+      border-radius: 1.5rem;
+    }
+
+    &__infos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 10rem;
+
+      div {
+        padding: 4rem;
+
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        span {
+          margin: 1.5rem 0 2rem;
+          font-size: 0.75rem;
+        }
+
+        p {
+          min-height: 125px;
+          max-width: 450px;
+        }
+
+        button {
+          font-size: 1rem;
+        }
+      }
+
+      img {
+        order: 1;
+        height: 100%;
+        max-height: 440px;
+        border-radius: 0 1.5rem 1.5rem 0;
+      }
+    }
+
+    &__link {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+      right: 4rem;
+      bottom: 4rem;
+      z-index: 4;
+    }
+  }
+
+  .cta {
+    margin: -4rem 3rem 0;
+    padding: 0 0 0 7.5rem;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: 485px 1fr;
+
+    span {
+      margin-top: 4rem;
+      font-size: 1rem;
+    }
+
+    h3 {
+      margin: 0.875rem 0 1.5rem;
+      line-height: 1.42;
+    }
+
+    .basic {
+      margin-bottom: 3rem;
+      width: fit-content;
+    }
+
+    img {
+      grid-row: 1/5;
+      grid-column: 2/3;
+      bottom: 0;
+      max-height: 380px;
+      object-fit: contain;
+    }
+  }
+}

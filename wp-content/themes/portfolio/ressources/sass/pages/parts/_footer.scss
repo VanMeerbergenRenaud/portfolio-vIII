@@ -28,7 +28,7 @@ footer {
     margin: 2rem auto 1.5rem;
     padding: 1rem 4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1.1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0 6.5rem;
     align-items: center;
     max-width: 1600px;
