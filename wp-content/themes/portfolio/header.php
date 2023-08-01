@@ -45,8 +45,7 @@
         ?>
     </title>
 </head>
-
-<body>
+<body itemscope itemtype="https://schema.org/Person">
 <!--[if IE]>
 <p class="browserupgrade">Vous utilisez un navigateur <strong> obsolète </strong>. Veuillez
     <a href="https://browsehappy.com/" title="vers le site browsehappy"> mettre à niveau votre navigateur </a> pour améliorer votre expérience et votre sécurité.

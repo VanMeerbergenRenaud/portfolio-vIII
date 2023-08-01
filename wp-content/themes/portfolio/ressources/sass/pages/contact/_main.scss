@@ -1,11 +1,29 @@
 /* Contact  : Mobile & Desktop */
 
-.contact {
+@import "./form";
 
+.contact {
+  padding: 1rem;
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.form {
+  &__container {
+
+  }
 }
 
 @media screen and (min-width: 1250px) {
   .contact {
 
+  }
+
+  .form {
+    &__container {
+
+    }
   }
 }
