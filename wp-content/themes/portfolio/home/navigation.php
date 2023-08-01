@@ -1,17 +1,16 @@
-<nav class="navigation" role="navigation" aria-label="Main" itemscope
-     itemtype="http://schema.org/SiteNavigationElement">
+<nav class="navigation" role="navigation" aria-label="Main" itemscope itemtype="http://schema.org/SiteNavigationElement" tabindex="0">
     <h2 class="hidden" role="heading" aria-level="2">Menu de navigation</h2>
     <a href="<?= get_home_url(); ?>" class="navigation__link" title="Retour à l'accueil" itemprop="url">
-        <span class="tooltip">Disponible</span>
+        <span class="tooltip">À votre service</span>
         <span itemprop="name">Renaud Vmb</span>
     </a>
-    <ul role="menu" class="navigation__menu">
+    <ul role="menu" class="navigation__menu" tabindex="0">
         <?php if (have_rows('navigation', 'option')) :
             while (have_rows('navigation', 'option')) : the_row();
                 $link = get_sub_field('link');
                 $text = get_sub_field('text');
                 ?>
-                <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li itemscope itemtype="http://schema.org/SiteNavigationElement" tabindex="0">
                     <a href="<?= $link; ?>" tabindex="0" title="Vers la page <?= $text; ?>" itemprop="url">
                         <span itemprop="name"><?= $text; ?></span>
                     </a>
@@ -19,8 +18,7 @@
             <?php endwhile;
         endif; ?>
     </ul>
-    <a href="https://github.com/VanMeerbergenRenaud" class="navigation__social-link" title="Vers mon profil Github"
-       target="_blank" itemprop="url">
+    <a href="https://github.com/VanMeerbergenRenaud" class="navigation__social-link" title="Vers mon profil Github" target="_blank" itemprop="url">
         <img src="<?= get_field('github', 'option'); ?>" alt="icône du site Github" itemprop="image">
     </a>
 </nav>

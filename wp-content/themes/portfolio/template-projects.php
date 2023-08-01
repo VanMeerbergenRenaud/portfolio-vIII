@@ -12,7 +12,7 @@
                     $image = get_sub_field('img');
                     $link = get_sub_field('link');
                     ?>
-                    <article class="card" itemscope itemtype="http://schema.org/CreativeWork">
+                    <article class="card" itemscope itemtype="http://schema.org/CreativeWork" tabindex="0">
                         <div class="card-content projects__infos">
                             <div>
                                 <h3 role="heading" aria-level="3" itemprop="name"><?= $title; ?></h3>
@@ -28,7 +28,7 @@
             endif;
             ?>
         </section>
-        <section class="cta">
+        <section class="cta" tabindex="0">
             <?php
             $cta = get_field('cta');
             if ($cta) :

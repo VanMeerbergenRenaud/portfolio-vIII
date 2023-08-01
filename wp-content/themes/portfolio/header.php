@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta donnée du site -->
     <meta name="author" content="<?= get_bloginfo('name'); ?>">
-    <meta name="description" content="<?= get_bloginfo('description'); ?>">
+    <meta name="description" content="Portfolio de <?= get_bloginfo('description'); ?>">
 
     <link rel="icon" href="https://renaud-vmb.com/favicon.ico" type="image/x-icon">
 
@@ -51,11 +51,13 @@
     <a href="https://browsehappy.com/" title="vers le site browsehappy"> mettre à niveau votre navigateur </a> pour améliorer votre expérience et votre sécurité.
 </p>
 <![endif]-->
-<p class="no-js__message">
-    Pour accéder à toutes les fonctionnalités de ce site, vous devez activer JavaScript.<br>
-    Voici les <a href="https://www.enable-javascript.com/fr/" title="vers le site enable-javascript">
-    instructions pour activer JavaScript dans votre navigateur Web</a>.
-</p>
+<noscript>
+    <p class="no-js__message">
+        Pour accéder à toutes les fonctionnalités de ce site, vous devez activer JavaScript.<br>
+        Voici les <a href="https://www.enable-javascript.com/fr/" title="vers le site enable-javascript">
+            instructions pour activer JavaScript dans votre navigateur Web</a>.
+    </p>
+</noscript>
 <header role="banner">
     <h1 class="hidden"><?= get_bloginfo('name'); ?></h1>
     <?php get_template_part('home/navigation'); ?>

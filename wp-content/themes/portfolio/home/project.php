@@ -1,4 +1,4 @@
-<section class="card project" aria-label="Section présentant mon dernier projet">
+<section class="card project" aria-label="Section présentant mon dernier projet" tabindex="0">
     <div class="card-content">
         <h3 role="heading" aria-level="3"><?= get_field('project-title'); ?></h3>
         <p><?= get_field('project-text'); ?></p>

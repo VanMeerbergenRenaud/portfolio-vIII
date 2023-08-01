@@ -1,4 +1,4 @@
-<section class="card hero" aria-label="Section d'accueil et de bienvenue" itemscope itemtype="http://schema.org/Person">
+<section class="card hero" aria-label="Section d'accueil et de bienvenue">
     <meta itemprop="name" content="Renaud Van Meerbergen">
     <meta itemprop="jobTitle" content="Développeur web front-end">
     <div class="card-content">

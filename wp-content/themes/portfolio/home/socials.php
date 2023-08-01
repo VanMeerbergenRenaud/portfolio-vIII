@@ -1,4 +1,4 @@
-<section class="card twitter" aria-label="Section de mon réseau social principal">
+<section class="card twitter" aria-label="Section de mon réseau social principal" tabindex="0">
     <div class="card-content">
         <h3 role="heading" aria-level="3" class="hidden">Réseau social Twitter</h3>
         <img class="twitter__img" src="<?= get_field('twitter-logo'); ?>" alt="logo actuel de l'entreprise Twitter">
@@ -11,7 +11,7 @@
         <a class="twitter__link basic" href="<?= get_field('twitter-link'); ?>" title="Vers le profil Twitter" target="_blank">Visiter le profil</a>
     </div>
 </section>
-<section class="card github" aria-label="Section de mon réseau social de développeur">
+<section class="card github" aria-label="Section de mon réseau social de développeur" tabindex="0">
     <div class="card-content">
         <h3 role="heading" aria-level="3" class="hidden">Réseau social Github</h3>
         <div class="github__container">

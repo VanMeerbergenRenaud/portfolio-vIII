@@ -1,4 +1,4 @@
-<section class="card projects" aria-label="Section présentant la liste de mes derniers projets">
+<section class="card projects" aria-label="Section présentant la liste de mes derniers projets" tabindex="0">
     <div class="card-content">
         <h3 role="heading" aria-level="3"><?= get_field('projects-title'); ?></h3>
         <ul role="list">
@@ -9,7 +9,7 @@
                     $img = get_sub_field('img');
                     $link = get_sub_field('link');
                     ?>
-                    <li>
+                    <li tabindex="0">
                         <a href="<?= $link; ?>" title="Vers le projet" target="_blank">
                             <span class="projects__title"><?= $title; ?></span>
                             <span class="projects__text"><?= $text; ?></span>

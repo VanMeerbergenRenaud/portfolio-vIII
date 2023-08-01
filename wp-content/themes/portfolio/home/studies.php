@@ -1,4 +1,4 @@
-<section class="card studies" aria-label="Section présentant mon parcours professionnel">
+<section class="card studies" aria-label="Section présentant mon parcours professionnel" tabindex="0">
     <div class="card-content">
         <h3 role="heading" aria-level="3"><?= get_field('studies-title'); ?></h3>
         <ul role="list">

@@ -1,4 +1,4 @@
-<section class="card contact form" aria-label="Section du formulaire de contact">
+<section class="card contact form" aria-label="Section du formulaire de contact" tabindex="0">
     <h3 role="heading" aria-level="3" class="hidden">Formulaire de contact</h3>
     <div class="card-content form__container">
         <img src="<?= get_field('contact-img'); ?>" class="contact__img" alt="selfie de Renaud">

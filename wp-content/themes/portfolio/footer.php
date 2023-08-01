@@ -1,11 +1,11 @@
-        <footer role="contentinfo">
+        <footer role="contentinfo" tabindex="0">
             <ul>
                 <?php if (have_rows('footer-links', 'option')) :
                     while (have_rows('footer-links', 'option')) : the_row();
                         $link = get_sub_field('link');
                         $text = get_sub_field('text');
                         ?>
-                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement" tabindex="0">
                             <a href="<?= $link; ?>" tabindex="0" title="Vers la page <?= $text; ?>" itemprop="url">
                                 <span itemprop="name"><?= $text; ?></span>
                             </a>
@@ -13,8 +13,10 @@
                     <?php endwhile;
                 endif; ?>
             </ul>
-            <p>
-                © 2023 <a href="<?= get_home_url(); ?>" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Tous droits réservés.
+            <p itemscope itemtype="https://schema.org/CreativeWork">
+                &copy; <span itemprop="datePublished">2023</span>
+                <a href="<?= get_home_url(); ?>" itemprop="author" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>.
+                Tous droits réservés.
             </p>
         </footer>
         <?php

@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
-        <section class="mentions-legales" aria-label="Section des mentions légales du site">
+        <section class="mentions-legales" aria-label="Section des mentions légales du site" itemscope itemtype="https://schema.org/LegalService">
             <h2 role="heading" aria-level="2"><?= get_field('mentions-title'); ?></h2>
             <p class="date">
                 Dernière modification le
@@ -10,7 +10,7 @@
                 $date = get_the_modified_date('Y-m-d H:i:s');
                 $date_format_french = get_the_modified_date('j F Y');
                 ?>
-                <time datetime="<?= esc_attr($date); ?>"><?= esc_html($date_format_french); ?></time>
+                <time itemprop="dateModified" datetime="<?= esc_attr($date); ?>"><?= esc_html($date_format_french); ?></time>
             </p>
             <ul itemscope itemtype="http://schema.org/Person" role="list">
                 <li>

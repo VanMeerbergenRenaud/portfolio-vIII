@@ -17,7 +17,7 @@
     .tooltip {
       position: absolute;
       top: 0;
-      left: 1.5rem;
+      left: 0.5rem;
       padding: 0.5rem;
       font-size: 0.875rem;
       color: white;
@@ -31,7 +31,7 @@
 
     &:hover .tooltip {
       top: -1.5rem;
-      left: 1.5rem;
+      left: 0.5rem;
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
