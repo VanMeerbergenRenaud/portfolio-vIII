@@ -5,7 +5,7 @@
                         $link = get_sub_field('link');
                         $text = get_sub_field('text');
                         ?>
-                        <li itemscope itemtype="http://schema.org/SiteNavigationElement" tabindex="0">
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
                             <a href="<?= $link; ?>" tabindex="0" title="Vers la page <?= $text; ?>" itemprop="url">
                                 <span itemprop="name"><?= $text; ?></span>
                             </a>

@@ -56,6 +56,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 4;
     background-color: transparent;
   }
 }
@@ -139,15 +140,6 @@
         max-height: 440px;
         border-radius: 0 1.5rem 1.5rem 0;
       }
-    }
-
-    &__link {
-      position: absolute;
-      top: 4rem;
-      left: 4rem;
-      right: 4rem;
-      bottom: 4rem;
-      z-index: 4;
     }
   }
 

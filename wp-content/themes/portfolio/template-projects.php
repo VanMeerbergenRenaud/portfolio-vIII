@@ -42,7 +42,7 @@
                 <p><?= esc_html($text); ?></p>
                 <a href="<?= esc_url(get_home_url() . '/contact'); ?>" class="basic" title="Vers la page de contact">Prendre rendez-vous</a>
                 <img src="<?= $img; ?>" alt="mockup de présentation sur un téléphone, 2 ordinateurs et un ipad le projet">
-                <a href="<?= esc_url(get_home_url() . '/contact'); ?>" class="link"></a>
+                <a href="<?= esc_url(get_home_url() . '/contact'); ?>" class="link" tabindex="-1"></a>
             <?php endif; ?>
         </section>
     </main>

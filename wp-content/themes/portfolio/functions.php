@@ -22,12 +22,21 @@ add_image_size('img-thumbnail', 400, 400, true);
 // Enregistrer un custom post type :
 function hepl_register_custom_post_types(): void
 {
+    register_post_type('projets', [
+        'label' => 'Projets',
+        'description' => 'Les projets de Renaud Van Meerbergen',
+        'public' => true,
+        'menu_position' => 20,
+        'menu_icon' => 'dashicons-portfolio',
+        'supports' => ['title','thumbnail', 'editor'],
+    ]);
+
     register_post_type('message', [
         'label' => 'Message de contact',
         'description' => 'Messages envoyés via le formulaire de contact.',
         'public' => true,
         'menu_position' => 20,
-        'menu_icon' => 'dashicons-email', // https://developer.wordpress.org/resource/dashicons/#pets,
+        'menu_icon' => 'dashicons-email', // https://developer.wordpress.org/resource/dashicons
         'supports' => ['title', 'editor'],
     ]);
 }

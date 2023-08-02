@@ -1,7 +1,138 @@
 /* Single project : Mobile & Desktop */
 
-.project {
+main {
+  display: block;
+  padding: 0;
+}
 
+.project {
+  padding: 2rem 0 0;
+
+  &__span {
+    display: block;
+    margin: 2rem auto 1.5rem;
+    padding: 0 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  section {
+    margin-top: 3.25rem;
+    padding: 3rem 1.5rem 2rem;
+    border: 1px solid #352E46;
+    border-bottom: none;
+    border-radius: 1.5rem;
+
+    h3 {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+    }
+
+    .details {
+      padding: 2rem;
+      border-radius: 1.5rem;
+      border: 1px solid #EDEDED;
+
+      span {
+        font-size: 0.75rem;
+        line-height: 2;
+        text-transform: uppercase;
+      }
+
+      a {
+        font-size: 0.875rem;
+      }
+    }
+
+    .jack {
+      ul {
+        li {
+          display: grid;
+          grid-template-columns: 4rem 1fr;
+          gap: 3rem;
+        }
+
+        li + li {
+          margin-top: 2.5rem;
+        }
+      }
+    }
+
+    .jack2 {
+      ul {
+        li {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+        }
+
+        li + li {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .details + .details {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .gallery {
+    margin: 2rem 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+
+    ul {
+      padding: 0;
+      overflow: hidden;
+
+      li {
+        padding: 0;
+
+        img {
+          margin: 0.75rem auto;
+          width: auto;
+          min-height: 499px;
+          max-height: 500px;
+          border-radius: 1rem;
+        }
+      }
+
+      li:first-of-type {
+        img {
+          position: relative;
+          transform: translateX(1rem);
+          width: calc(100% - 2rem);
+        }
+      }
+
+      li:nth-of-type(2) {
+        img {
+          position: relative;
+          transform: translateX(1.5rem);
+          width: 200%;
+        }
+      }
+
+      li:nth-of-type(3) {
+         img {
+           position: relative;
+           transform: translateX(calc(-50% - 1.5rem));
+           width: 200%;
+         }
+       }
+    }
+  }
 }
 
 @media screen and (min-width: 1250px) {
