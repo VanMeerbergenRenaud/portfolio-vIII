@@ -2,7 +2,7 @@
     <h2 class="hidden" role="heading" aria-level="2">Menu de navigation</h2>
     <a href="<?= get_home_url(); ?>" class="navigation__link" title="Retour à l'accueil" itemprop="url">
         <span class="tooltip">À votre service</span>
-        <span itemprop="name">Renaud Vmb</span>
+        <span itemprop="alternateName">Renaud Vmb</span>
     </a>
     <ul role="menu" class="navigation__menu" tabindex="0">
         <?php if (have_rows('navigation', 'option')) :

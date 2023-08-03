@@ -76,6 +76,7 @@ a {
   background-color: #0A0118;
 }
 
+/* Regular link style */
 .basic {
   margin-top: 2rem;
   position: relative;
@@ -93,9 +94,36 @@ a {
   background-color: #211a34;
 }
 
+/* Cta border animation */
+.cta-border {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 0.3rem;
+}
+
+.cta-border::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 1rem;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.cta-border:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 abbr {
   text-decoration: none;
-  border-bottom: 1px dotted #222;
+  border-bottom: 1px dotted #3a3943;
 }
 
 .none {

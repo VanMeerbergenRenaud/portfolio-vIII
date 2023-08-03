@@ -64,6 +64,6 @@
     </p>
 </noscript>
 <header role="banner">
-    <h1 class="hidden"><?= get_bloginfo('name'); ?></h1>
+    <h1 class="hidden"><span itemprop="name"><?= get_bloginfo('name'); ?></span></h1>
     <?php get_template_part('home/navigation'); ?>
 </header>

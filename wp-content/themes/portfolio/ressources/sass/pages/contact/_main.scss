@@ -6,6 +6,10 @@ main {
   display: block;
 }
 
+section {
+  padding: 0;
+}
+
 h2 {
   font-size: 2rem;
   text-align: center;
@@ -13,14 +17,13 @@ h2 {
 }
 
 .contact {
-  padding: 1rem;
+  padding: 1px;
 
   aside {
     margin: 0 auto;
     max-width: 500px;
     padding: 2rem;
     border-radius: 1.5rem;
-    border: 1px solid #352E46;
 
     h3 {
       font-size: 1.25rem;
@@ -39,6 +42,11 @@ h2 {
           color: #9A96AE;
           font-size: 0.875rem;
           line-height: 2;
+        }
+
+        a:hover {
+          transform: translate(0.5rem);
+          scale: 1.05;
         }
       }
 
@@ -93,7 +101,6 @@ h2 {
   }
 
   .contact {
-    padding: 0;
     height: fit-content;
 
     aside {
@@ -122,14 +129,21 @@ h2 {
   }
 
   .form {
-    padding: 3rem 3rem 1.5rem;
     margin: 0;
+    padding: 1px;
     border-radius: 1.5rem;
-    border: 1px solid #352E46;
+
+    .card-content {
+      padding: 3rem 3rem 1.5rem;
+    }
 
     h3 {
       margin: 0 0 2rem 1rem;
       text-align: left;
+    }
+
+    h3, p {
+      max-width: 280px;
     }
 
     .error {

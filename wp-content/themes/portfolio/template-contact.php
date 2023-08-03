@@ -1,11 +1,11 @@
 <?php /* Template Name: Contact page template */ ?>
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
-    <main>
+    <main id="cards">
         <h2 role="heading" aria-level="2"><?= get_field('contact-title'); ?></h2>
-        <section class="contact" aria-label="Section des informations et du formulaire de contact" tabindex="0">
+        <section class="card contact" aria-label="Section des informations et du formulaire de contact" tabindex="0">
             <h2 role="heading" aria-level="2" class="hidden">N'hésitez pas à me contacter</h2>
-            <aside role="complementary">
+            <aside role="complementary" class="card-content">
                 <h3 role="heading" aria-level="3"><?= get_field('contact-subtitle'); ?></h3>
                 <div class="infos">
                     <p>
@@ -27,11 +27,13 @@
                 </div>
             </aside>
         </section>
-        <section class="form" aria-label="Section du formulaire de contact" tabindex="0">
-            <h3 role="heading" aria-level="3">Formulaire de contact</h3>
-            <p class="hide">Veuillez remplir le formulaire dans son entièreté afin d’éviter la moindre erreur.</p>
-            <div class="form__container">
-                <?php get_template_part('contact_form'); ?>
+        <section class="card form" aria-label="Section du formulaire de contact" tabindex="0">
+            <div class="card-content">
+                <h3 role="heading" aria-level="3">Formulaire de contact</h3>
+                <p class="hide">Veuillez remplir le formulaire dans son entièreté afin d’éviter la moindre erreur.</p>
+                <div class="form__container">
+                    <?php get_template_part('contact_form'); ?>
+                </div>
             </div>
         </section>
     </main>
