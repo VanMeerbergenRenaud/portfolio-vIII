@@ -2,6 +2,11 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
         <article class="project">
+            <a class="back" href="<?= get_home_url() . '/projets'; ?>" title="Retourner à la page des projets">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                    <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" fill="#fff" />
+                </svg>Retour aux projets
+            </a>
             <span class="project__span"><?= get_field('type'); ?>&nbsp;|&nbsp;<?= get_field('name'); ?></span>
             <h2 role="heading" aria-level="2"><?= get_field('title'); ?></h2>
             <section aria-label="Section de details sur la réalisation de mon projet">
@@ -50,6 +55,7 @@
                 </div>
             </section>
             <section class="gallery" aria-label="Section de présentation des mockups du site internet réalisé">
+                <h3 role="heading" aria-level="3">Gallerie photo du projet</h3>
                 <ul>
                     <?php
                     $images = get_field('img-mockup');
