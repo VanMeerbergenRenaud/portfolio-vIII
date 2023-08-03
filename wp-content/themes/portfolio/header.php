@@ -12,10 +12,15 @@
     <?php
     $page_styles = array(
         'accueil' => 'site',
-        'projets' => 'projets',
-        'projet' => 'projet',
         'contact' => 'contact',
         'mentions-legales' => 'mentions-legales',
+        'projets' => 'projets',
+        /* Pour les projets en post */
+        'clinicoeurs' => 'projet',
+        'portfolio-v2' => 'projet',
+        'cv-airbnb' => 'projet',
+        'jf-stassen' => 'projet',
+        'portfolio-v1' => 'projet',
     );
 
     $page_slug = get_post_field('post_name');

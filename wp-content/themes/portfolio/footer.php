@@ -20,12 +20,10 @@
             </p>
         </footer>
         <?php
-            if (is_front_page()) {
+            if (is_front_page() || is_page('projets')) {
                 echo '<script src="' . get_stylesheet_directory_uri() . '/public/js/site.js"></script>';
             } elseif (is_page('contact')) {
                 echo '<script src="' . get_stylesheet_directory_uri() . '/public/js/form.js"></script>';
-            } elseif (is_page('projets')) {
-                echo '<script src="' . get_stylesheet_directory_uri() . '/public/js/projets.js"></script>';
             } else {
                 echo "<script>document.documentElement.classList.add('js-enabled');</script>";
             }

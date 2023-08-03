@@ -12,4 +12,3 @@ mix.sass('wp-content/themes/portfolio/ressources/sass/pages/404/site.scss', 'wp-
 /* JS */
 mix.js('wp-content/themes/portfolio/ressources/js/site.js', 'wp-content/themes/portfolio/public/js');
 mix.js('wp-content/themes/portfolio/ressources/js/form.js', 'wp-content/themes/portfolio/public/js/form.js');
-mix.js('wp-content/themes/portfolio/ressources/js/projets.js', 'wp-content/themes/portfolio/public/js/projets.js');
