@@ -1,10 +1,12 @@
 ## Portfolio Personnel - Cours de Design Web à l'HEPL
 
-### Bienvenue sur mon portfolio personnel réalisé dans le cadre du cours de Design Web à l'HEPL (Haute École de la Province de Liège) !
+#### Bienvenue sur mon portfolio personnel réalisé dans le cadre du cours de Design Web à l'HEPL (Haute École de la Province de Liège) !
 
-- **Période de création :** 15 juillet 2023 au 4 août 2023
-- **Technologies utilisées :** WordPress (PHP, SCSS, JS), PhpStorm
-- **Style :** Sombre avec un template de grille
+🚀 Période de création : 15 juillet 2023 au 4 août 2023
+
+🛠️ Technologies utilisées : WordPress (PHP, SCSS, JS), PhpStorm
+
+🎨 Style : Sombre avec un template de grille
 
 ### Aperçu
 
