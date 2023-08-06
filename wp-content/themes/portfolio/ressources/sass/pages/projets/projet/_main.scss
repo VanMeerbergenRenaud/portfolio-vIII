@@ -135,6 +135,7 @@ main {
 
     ul {
       padding: 0;
+      overflow-x: hidden;
 
       li {
         padding: 0;
@@ -157,17 +158,19 @@ main {
       }
 
       li:nth-of-type(2) {
+        overflow-x: scroll;
         img {
           position: relative;
-          transform: translateX(1.5rem);
+          transform: translateX(1rem);
           width: 200%;
         }
       }
 
       li:nth-of-type(3) {
+        overflow-x: hidden;
          img {
            position: relative;
-           transform: translateX(calc(-50% - 1.5rem));
+           transform: translateX(calc(-50% - 1rem));
            width: 200%;
          }
        }

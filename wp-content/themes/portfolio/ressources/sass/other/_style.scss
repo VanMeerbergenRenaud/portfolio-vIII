@@ -149,7 +149,7 @@ abbr {
   body {
     margin: 0 auto;
     min-width: 1200px;
-    max-width: 2000px;
+    max-width: 1800px;
   }
 
   h2 {
@@ -176,5 +176,13 @@ abbr {
     font-size: 1rem;
     font-weight: 500;
     line-height: 2;
+  }
+}
+
+/* Large screen */
+@media (min-width: 1800px) {
+  body {
+    margin: 0 auto;
+    padding: 0 7.5rem;
   }
 }

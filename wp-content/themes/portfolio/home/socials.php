@@ -8,7 +8,7 @@
             <img src="<?= get_field('twitter-img'); ?>" alt="selfie de Renaud">
         </div>
         <p class="twitter__text"><?= get_field('twitter-text'); ?></p>
-        <a class="twitter__link basic" href="<?= get_field('twitter-link'); ?>" title="Vers le profil Twitter" target="_blank">Visiter le profil</a>
+        <a class="twitter__link basic" href="<?= get_field('twitter-link'); ?>" title="Vers le profil Twitter" rel="noopener" target="_blank">Visiter le profil</a>
     </div>
 </section>
 <section class="card github" aria-label="Section de mon réseau social de développeur" tabindex="0">
@@ -21,7 +21,7 @@
             </div>
             <p class="title"><?= get_field('github-title'); ?></p>
             <p class="text"><?= get_field('github-text'); ?></p>
-            <a class="link basic" href="<?= get_field('github-link'); ?>" title="Vers le profil Twitter" target="_blank">Visiter le profil</a>
+            <a class="link basic" href="<?= get_field('github-link'); ?>" title="Vers le profil Twitter" rel="noopener" target="_blank">Visiter le profil</a>
         </div>
         <!-- Github Card-->
         <div class="github__card none">

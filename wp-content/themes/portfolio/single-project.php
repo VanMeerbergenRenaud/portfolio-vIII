@@ -56,7 +56,7 @@
                                 <p><?= get_field('category'); ?></p>
                             </li>
                         </ul>
-                        <a href="<?= get_field('project-link'); ?>" class="basic" title="Vers le site du projet : <?= get_field('name'); ?>" target="_blank">Visiter le site</a>
+                        <a href="<?= get_field('project-link'); ?>" rel="noopener" class="basic" title="Vers le site du projet : <?= get_field('name'); ?>" target="_blank">Visiter le site</a>
                     </div>
                 </div>
             </section>

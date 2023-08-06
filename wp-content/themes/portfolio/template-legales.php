@@ -46,7 +46,7 @@
                             <span itemprop="postalCode">6023</span> <span itemprop="addressLocality">Larnaca</span><br>
                             <span itemprop="addressCountry">Chypre</span>
                         </span><br>
-                        <a href="https://www.hostinger.fr" itemprop="url" title="Vers le site Hostinger" target="_blank">https://www.hostinger.fr</a>
+                        <a href="https://www.hostinger.fr" itemprop="url" title="Vers le site Hostinger" rel="noopener" target="_blank">https://www.hostinger.fr</a>
                     </p>
                 </li>
             </ul>
