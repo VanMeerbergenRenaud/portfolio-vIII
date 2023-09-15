@@ -12,9 +12,13 @@
                     <li itemscope itemtype="https://schema.org/ResumeAction">
                         <div class="period">
                             <p>
-                                <time itemprop="startTime" datetime="<?= $date; ?>"><?= $date; ?></time>
-                                <span>&nbsp;&#x2014;&nbsp;</span>
-                                <time itemprop="endTime" datetime="<?= $date2; ?>"><?= $date2; ?></time>
+                                <time itemprop="startTime" datetime="<?= esc_attr($date); ?>">
+                                    <?= date('m/Y', strtotime($date)); ?>
+                                </time>
+                                &nbsp;&#x2014;&nbsp;
+                                <time itemprop="endTime" datetime="<?= esc_attr($date2);?>">
+                                    <?= date('m/Y', strtotime($date2)); ?>
+                                </time>
                             </p>
                         </div>
                         <h4 role="heading" aria-level="4" itemprop="name"><?= $title; ?></h4>

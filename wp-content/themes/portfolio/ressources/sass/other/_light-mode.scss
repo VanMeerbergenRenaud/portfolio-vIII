@@ -1,0 +1,194 @@
+/* Light Mode */
+
+// Variables
+$bg-light: whitesmoke;
+$text-light: #0A0118;
+
+$bg-dark: #0A0118;
+$text-dark: #f2f2f2;
+
+$icon-fill: hsl(224, 5%, 57%);
+$icon-fill-hover: hsl(0, 0%, 71%);
+
+.theme-toggle {
+  $size: 1.5rem;
+
+  inline-size: $size;
+  block-size: $size;
+
+  background: none;
+  border: none;
+  padding: 0;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  outline-offset: 5px;
+
+  & > svg {
+    inline-size: 100%;
+    block-size: 100%;
+    stroke-linecap: round;
+  }
+
+  @media (hover: none) {
+    $size: 2rem;
+  }
+}
+
+// Light theme
+.sun-and-moon {
+  & > :is(.moon, .sun, .sun-beams) {
+    transform-origin: center center;
+  }
+
+  & > :is(.moon, .sun) {
+    fill: $icon-fill;
+
+    .theme-toggle:is(:hover, :focus-visible) > & {
+      fill: $icon-fill-hover;
+    }
+  }
+
+  & > .sun-beams {
+    stroke: $icon-fill;
+    stroke-width: 2px;
+
+    .theme-toggle:is(:hover, :focus-visible) & {
+      stroke: $icon-fill-hover;
+    }
+  }
+}
+
+// Dark theme
+.sun-and-moon {
+  [data-theme="dark"] & {
+    & > .sun {
+      transform: scale(1.75);
+    }
+
+    & > .sun-beams {
+      opacity: 0;
+    }
+
+    & > .moon > circle {
+      transform: translateX(-7px);
+
+      @supports (cx: 1) {
+        transform: translateX(0);
+        cx: 17;
+      }
+    }
+  }
+}
+
+.sun {
+  transition: transform .5s cubic-bezier(.5, 1.25, .75, 1.25);
+}
+
+html[data-theme=dark] {
+  color-scheme: dark;
+
+  body, .card > .card-content, .navigation a, .footer, .navigation .navigation__menu, .navigation .navigation__menu a {
+    background-color: $bg-light;
+    color: $text-light;
+  }
+
+  .navigation {
+    border: 1px solid rgba(150, 150, 150, 0.15);
+  }
+
+  .navigation img, .approach img, .tools img, .twitter__img, .github__container img, .code__container img {
+    filter: invert(100%);
+  }
+
+  .card .card-content {
+    h2, h3, h4, p, span, a, ul, li, input, label, textarea, button, ul li .period time {
+      background-color: $bg-light;
+      color: $text-light;
+    }
+
+    .contact__form .contact__info__field {
+      input:focus, textarea:focus {
+        border: 1px solid rgba(150, 150, 150, 0.5);
+      }
+    }
+  }
+
+  .card::before {
+    background: radial-gradient(var(--circle-size, 600px) circle at var(--mouse-x) var(--mouse-y), rgba(150, 150, 150, 0.06), transparent 40%);
+    z-index: 3;
+  }
+
+  .card::after {
+    background: radial-gradient(var(--circle-size, 600px) circle at var(--mouse-x) var(--mouse-y), rgba(150, 150, 150, 0.4), transparent 40%);
+    z-index: 1;
+  }
+
+  .code .card-content .code__container {
+    border-top: 1px solid rgba(150, 150, 150, 0.15);
+    border-left: 1px solid rgba(150, 150, 150, 0.15);
+    background-image: none;
+  }
+
+  .projects .card-content ul li a {
+    border-top: 1px solid rgba(150, 150, 150, 0.15);
+  }
+
+  .contact__text {
+    border: 1px solid #f2f2f2;
+  }
+
+  .contact__form .contact__info__field, .contact__footer {
+    input, textarea, button {
+      border: 1px solid rgba(150, 150, 150, 0.15);
+    }
+  }
+
+  .github__container .logo img {
+    border: 1px solid rgba(150, 150, 150, 0.15);
+  }
+
+  .basic {
+    border: 1px solid rgba(150, 150, 150, 0.25);
+  }
+
+  .basic:hover {
+    color: #0A0118;
+    background-color: whitesmoke;
+  }
+
+  .cta-border, footer li, footer p, footer a, footer span {
+    color: #0A0118;
+    background-color: transparent;
+  }
+
+  .cta-border:before {
+    background-color: #0A0118;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  html[data-theme=dark] {
+    .navigation {
+      background-color: whitesmoke;
+      border: 1px solid rgba(150, 150, 150, 0.25);
+    }
+
+    .github__card {
+      border: 1px solid rgba(150, 150, 150, 0.15);
+
+      ul li img {
+        filter: invert(100%);
+      }
+    }
+  }
+}
+
+@supports not (color-scheme: dark) {
+  html[data-theme=dark] {
+    color: white;
+    background: #0A0118;
+  }
+}

@@ -46,9 +46,9 @@
                             <li>
                                 <span>Temps de réalisation</span>
                                 <p>
-                                    <time datetime="<?= get_field('date-debut'); ?>"><?= get_field('date-debut'); ?></time>
+                                    <time datetime="<?= esc_attr(get_field('date-debut')); ?>"><?= date('d-m-Y', strtotime(get_field('date-debut'))); ?></time>
                                     &nbsp;-&nbsp;
-                                    <time datetime="<?= get_field('date-fin'); ?>"><?= get_field('date-fin'); ?></time>
+                                    <time datetime="<?= esc_attr(get_field('date-fin')); ?>"><?= date('d-m-Y', strtotime(get_field('date-fin'))); ?></time>
                                 </p>
                             </li>
                             <li>

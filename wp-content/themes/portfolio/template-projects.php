@@ -3,7 +3,7 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
         <section id="cards" class="projects" aria-label="Section de présentation de mes projets">
-            <h2 role="heading" aria-level="2">Mes projets</h2>
+            <h2 role="heading" aria-level="2">Mes projets.</h2>
             <?php if (have_rows('projets')) :
                 while (have_rows('projets')) : the_row();
                     $title = get_sub_field('title');

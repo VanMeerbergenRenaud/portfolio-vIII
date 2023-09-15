@@ -17,3 +17,6 @@ function mouseCardEffect(e) {
 }
 
 document.getElementById("cards").addEventListener("mousemove", mouseCardEffect);
+
+/* Switch theme */
+import './theme-toggle';

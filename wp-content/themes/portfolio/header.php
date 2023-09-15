@@ -6,7 +6,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Meta donnée du site -->
-    <meta itemprop="name" content="Portfolio de Renaud Van Meerbergen, développeur web front-end">
     <meta name="author" content="<?= get_bloginfo('name'); ?>">
     <meta name="title" content="Renaud Vmb">
     <meta name="keywords" content="Portfolio, Renaud Van Meerbergen, Front-end, Back-end, Fullstack, Développeur web, étudiant à l'HEPL, Développeur Wordpress">
@@ -14,8 +13,6 @@
 
     <!-- Icônes -->
     <link rel="icon" href="https://renaud-vmb.com/favicon.ico" type="image/x-icon">
-    <link rel="alternate icon" href="<?= get_field('logo'); ?>">
-    <link rel="mask-icon" href="<?= get_field('logo'); ?>" color="white">
 
     <!-- OpenGraphs -->
         <!-- Facebook -->

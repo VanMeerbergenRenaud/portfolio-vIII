@@ -8,7 +8,7 @@ $errors = hepl_session_get('hepl_contact_form_errors') ?? [];
         <p><?= get_field('success-message'); ?></p>
     </div>
 <?php else: ?>
-    <form action="<?= esc_url(admin_url('admin-post.php')); ?>" method="POST" class="contact__form">
+    <form action="<?= esc_url(admin_url('admin-post.php')  . '#contact'); ?>" method="POST" class="contact__form" id="contact">
         <?php if ($errors): ?>
             <div class="error">
                 <img src="<?= get_field('error-icon'); ?>" alt="memoji IOS de Renaud">
@@ -39,7 +39,7 @@ $errors = hepl_session_get('hepl_contact_form_errors') ?? [];
             </div>
             <div class="contact__info__field">
                 <label for="email">Adresse mail<span style="color: #ff3e3e">*</span></label>
-                <input type="email" name="email" id="email" placeholder="john.lepont@gmail.com" autocomplete>
+                <input type="email" name="email" id="email" placeholder="john.lepont@gmail.com">
                 <?php if ($errors['email'] ?? null): ?>
                     <p><?= $errors['email']; ?></p>
                 <?php endif; ?>
