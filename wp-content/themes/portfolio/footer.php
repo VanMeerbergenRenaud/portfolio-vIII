@@ -24,7 +24,7 @@
             </p>
         </footer>
         <?php
-            if (is_front_page() || is_page('projets') || is_singular('projets')) {
+            if (is_front_page() || is_page('projets') || is_singular('projets') || is_page('mentions-legales') || is_404()) {
                 echo '<script src="' . get_stylesheet_directory_uri() . '/public/js/site.js"></script>';
             } elseif (is_page('contact')) {
                 echo '<script src="' . get_stylesheet_directory_uri() . '/public/js/site.js"></script>';
