@@ -84,7 +84,7 @@ $icon-fill-hover: hsl(0, 0%, 71%);
   transition: transform .5s cubic-bezier(.5, 1.25, .75, 1.25);
 }
 
-// Light changes
+// Light mode mobile
 html[data-theme=light] {
   color-scheme: light;
 
@@ -98,6 +98,11 @@ html[data-theme=light] {
 
     &__menu {
       border: 1px solid rgba(150, 150, 150, 0.25);
+
+      li a:hover {
+        color: whitesmoke;
+        background-color: #0A0118;
+      }
     }
   }
 
@@ -106,7 +111,7 @@ html[data-theme=light] {
   }
 
   .card .card-content {
-    h2, h3, h4, p, span, a, ul, li, input, label, textarea, button, ul li .period time {
+    h1, h2, h3, h4, p, span, a, ul, li, input, label, textarea, button, ul li .period time {
       background-color: $bg-light;
       color: $text-light;
     }
@@ -134,7 +139,7 @@ html[data-theme=light] {
     background-image: none;
   }
 
-  .projects .card-content ul li a {
+  .projects .card-content ul li a, .project section {
     border-top: 1px solid rgba(150, 150, 150, 0.15);
   }
 
@@ -146,6 +151,16 @@ html[data-theme=light] {
     input, textarea, button {
       border: 1px solid rgba(150, 150, 150, 0.15);
     }
+
+    p {
+      color: #ff3e3e;
+      background-color: transparent;
+    }
+  }
+
+  .error, .success {
+    color: #0A0118;
+    background-color: whitesmoke;
   }
 
   .github__container .logo img {
@@ -156,9 +171,9 @@ html[data-theme=light] {
     border: 1px solid rgba(150, 150, 150, 0.25);
   }
 
-  .basic:hover {
-    color: #0A0118;
-    background-color: whitesmoke;
+  .card .card-content .basic:hover, .p404 .basic:hover {
+    color: whitesmoke;
+    background-color: #0A0118;
   }
 
   .cta-border, footer li, footer p, footer a, footer span {
@@ -171,7 +186,7 @@ html[data-theme=light] {
   }
 
   // PAGE Projets, Mentions legales & 404
-  .mentions-legales, .projects, .cta, .p404 {
+  .mentions-legales, .projects, .project, .project section, .gallery, .cta, .p404 {
     background-color: $bg-light;
     color: $text-light;
 
@@ -185,6 +200,10 @@ html[data-theme=light] {
     border-bottom: 1px solid black;
   }
 
+  .back svg path {
+      fill: #0A0118;
+  }
+
   .cta {
     border: 1px solid rgba(150, 150, 150, 0.25);
   }
@@ -196,6 +215,7 @@ html[data-theme=light] {
   }
 }
 
+// Light mode desktop
 @media screen and (min-width: 1250px) {
   .theme-toggle {
     margin-right: 1rem;
@@ -205,6 +225,10 @@ html[data-theme=light] {
     .navigation {
       background-color: whitesmoke;
       border: 1px solid rgba(150, 150, 150, 0.25);
+
+      &__menu {
+        border: 1px solid transparent;
+      }
     }
 
     .github__card {
